@@ -1,0 +1,291 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Noto Sans KR", "Noto Sans Korean", sans-serif;
+}
+
+div, span, h1, h2, h3, h4, h5, h6, ul, li, ol, span {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+input, select, option {
+	font-family: "Noto Sans KR", "Noto Sans Korean", sans-serif !important;
+	font-weight: 300;
+}
+
+button {
+	cursor: pointer;
+	outline: 0;
+	border: 0 none;
+}
+
+button:active {
+	transform: translateY(0.5px);
+}
+
+#mainContainer {
+	width: 100%;
+	height: 100%;
+}
+
+#topContainer {
+	width: 100%;
+	height: 75px;
+	background-color: #0389d2;
+}
+
+#leftContainer {
+	position: absolute;
+	width: 280px;
+	height: calc(100% - 75px);
+	border-right: 2px solid #cccccc;
+	background-color: #f8f8f8;
+	padding: 30px;
+}
+
+#logo {
+	position: absolute;
+	left: 42px;
+	top: 28px;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+#topContainer #loginUserName {
+	position: absolute;
+	right: 30px;
+	top: 28px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+#leftContainer .programGroup {
+	display: block;
+	margin-left: 20px;
+	padding-left: 30px;
+	background-image: url(/images/admin/ico_menu.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+
+#leftContainer ul li *.btnProgram {
+	display: block;
+	border: 0 none;
+	background-color: transparent;
+	color: #777777;
+	font-size: 16px;
+	margin-left: 50px;
+	margin-bottom: 10px;
+}
+
+#programContainer {
+	position: absolute;
+	left: 280px;
+	top: 75px;
+	width: calc(100% - 280px);
+	height: calc(100% - 75px);
+	padding: 30px;
+}
+
+/* programTitle[S] */
+#programContainer div.programTitleArea {
+	position: relative;
+	width: 100%;
+	/*border: 1px solid red;*/
+	min-height: 36px;
+}
+
+#programContainer div.programTitleArea .programTitle {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	font-size: 20px;
+	color: #0389d0;
+}
+
+#programContainer div.programTitleArea .programBtnArea {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: calc(100% - 200px);
+	text-align: right;
+}
+
+.programBtnArea button.btnProgramAction {
+	display: inline-block;
+	width: 110px;
+	height: 34px;
+	background-color: #0d7eba;
+	color: #ffffff;
+	font-size: 15px;
+	margin-left: 12px;
+}
+
+/* programTitle[E] */
+
+#programContainer form.searchArea {
+	position: relative;
+	margin-top: 12px;
+	width: 100%;
+	border: 1px solid #c9d5ed;
+	background-color: #f6fbff;
+	padding: 12px 25px 11px 25px;
+	min-height: 60px;
+}
+
+#programContainer form.searchArea label {
+	font-size: 16px;
+	color: #333333;
+	margin-right: 10px;
+	font-weight: 500;
+}
+
+#programContainer form.searchArea input, #programContainer form.searchArea select {
+	font-size: 15px;
+	height: 35px;
+	border: 1px solid #cccccc;
+	line-height: 35px;
+	padding: 5px;
+}
+
+#programContainer div.contentArea {
+	position: relative;
+	margin-top: 12px;
+	width: 100%;
+	height: calc(100% - 105px);
+	/*border: 1px solid #e51b1b;*/
+	overflow: hidden;
+}
+
+#programContainer div.contentArea div.gridArea {
+	width: calc(100% - 420px);
+	height: 100%;
+	float: left;
+	/*border: 1px solid #ffb32c;*/
+}
+
+#programContainer div.contentArea div.gridArea div.gridTitleArea {
+	position: relative;
+	/*border: 1px solid #fddfdf;*/
+	width: 100%;
+	height: 37px;
+}
+
+#programContainer div.contentArea div.gridArea div.gridTitleArea div.gridBtnArea {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 250px;
+	text-align: right;
+	/*border: 1px solid #0d7eba;*/
+}
+
+#programContainer div.contentArea div.gridArea div.gridTitleArea div.gridBtnArea button.btnGridAction {
+	display: inline-block;
+	width: 110px;
+	height: 34px;
+	background-color: #555555;
+	color: #ffffff;
+	font-size: 15px;
+	margin-left: 12px;
+}
+
+div.dataGrid {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 55px) !important;
+	/*border: 1px solid #28b883;*/
+	margin-top: 7px;
+}
+
+div.formArea {
+	width: 400px;
+	height: 100%;
+	float: right;
+}
+
+div.formArea div.formTitleArea {
+	position: relative;
+	/*border: 1px solid #fddfdf;*/
+	width: 100%;
+	height: 37px;
+}
+
+div.formArea form {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 55px) !important;
+	border: 1px solid #cccccc;
+	border-top: 2px solid #555555;
+	margin-top: 7px;
+}
+
+div.formArea form ul li {
+	display: block;
+	width: 100%;
+	height: 46px;
+	border-bottom: 1px solid #cccccc;
+	font-size: 15px;
+	line-height: 46px;
+}
+
+div.formArea form ul li > label:first-child {
+	display: block;
+	float: left;
+	width: 120px;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 15px;
+	background-color: #eeeeee;
+	font-size: 15px;
+	border-right: 1px solid #cdcdcd;
+}
+
+div.formArea form ul li input[type="text"],
+div.formArea form ul li input[type="password"],
+div.formArea form ul li select,
+div.formArea form ul li option {
+	display: block;
+	float: left;
+	width: 200px;
+	height: 30px;
+	line-height: 40px;
+	margin-left: 10px;
+	margin-top: 7px;
+	padding-left: 10px;
+	background-color: #ffffff;
+	font-size: 15px;
+	border: 1px solid #cdcdcd;
+}
+
+div.formArea form ul li input[type="radio"] {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-left: 10px;
+	line-height: 40px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+div.formArea form ul li input[type="radio"] + label {
+	margin-left: 5px;
+}
+
+.jsgrid table tr.highlight .jsgrid-cell {
+	background-color: #95b9e6;
+}
+
+.hidden {
+	display: none;
+}
+
+input:read-only {
+	background-color: #eeeeee !important;
+}

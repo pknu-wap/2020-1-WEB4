@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MainMapper">
+	<resultMap id="resultMap" type="java.util.HashMap"/>
+
+	<select id="selecUserInfo" resultType="egovframework.platform.module.common.vo.UserVO">
+--사용자정보 조회
+SELECT A.COMP_CD, A.USR_ID, A.USR_NM, A.USR_GRP_CD, A.TMPL_TYPE_CD
+  FROM SY_USR_INFO A
+ WHERE A.COMP_CD = #{COMP_CD}
+   AND A.USR_ID = #{USR_ID}
+   AND A.USR_PW = #{USR_PW}
+   AND A.USE_YN = 'Y'
+ LIMIT 1
+	</select>
+</mapper>
